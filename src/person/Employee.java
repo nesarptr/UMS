@@ -1,6 +1,6 @@
 package person;
 
-public class Employee extends UniPerson{
+public abstract class Employee extends UniPerson{
     private final String employeeId;
     private double salary;
 

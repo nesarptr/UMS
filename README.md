@@ -403,20 +403,20 @@ This structure makes the project easier to understand and demonstrates how objec
 
 ### 📊 Main Entities
 
-| Class        | Purpose                                | Main Relationships           |
-| ------------ | -------------------------------------- | ---------------------------- |
-| `Person`     | Represents a general person            | Parent class                 |
-| `UniPerson`  | Represents a university-related person | Extends `Person`             |
-| `Student`    | Represents a university student        | Department, Guardian, Exam   |
-| `Employee`   | Represents a university employee       | Extends `UniPerson`          |
-| `Teacher`    | Represents a teacher                   | Department, Subject          |
-| `Staff`      | Represents university staff            | Extends `Employee`           |
-| `Guardian`   | Represents a student's guardian        | Student                      |
-| `Department` | Represents an academic department      | Students, Teachers, Subjects |
-| `Subject`    | Represents an academic subject         | Department                   |
-| `Exam`       | Represents examination information     | Student, Subject             |
-| `Contact`    | Stores contact information             | Person, Address              |
-| `Address`    | Stores address information             | Contact                      |
+| Class        | Purpose                                | Main Relationships                     |
+|--------------|----------------------------------------|----------------------------------------|
+| `Person`     | Represents a general person            | Parent abstract class                  |
+| `UniPerson`  | Represents a university-related person | Extends `Person` also abstract         |
+| `Student`    | Represents a university student        | Department, Guardian, Exam             |
+| `Employee`   | Represents a university employee       | Extends `UniPerson` and abstract class |
+| `Teacher`    | Represents a teacher                   | Department, Subject                    |
+| `Staff`      | Represents university staff            | Extends `Employee`                     |
+| `Guardian`   | Represents a student's guardian        | Student                                |
+| `Department` | Represents an academic department      | Students, Teachers, Subjects           |
+| `Subject`    | Represents an academic subject         | Department                             |
+| `Exam`       | Represents examination information     | Student, Subject                       |
+| `Contact`    | Stores contact information             | Person, Address                        |
+| `Address`    | Stores address information             | Contact                                |
 
 
 ### ✨ Features

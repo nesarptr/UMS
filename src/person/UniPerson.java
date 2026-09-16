@@ -2,7 +2,7 @@ package person;
 
 import university.Department;
 
-public class UniPerson extends Person{
+public abstract class UniPerson extends Person{
     private Department department;
 
 

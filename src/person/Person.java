@@ -2,7 +2,7 @@ package person;
 
 import contact.Contact;
 
-public class Person {
+public abstract class Person {
     private final String id;
     private String name;
     private String bloodGroup;
